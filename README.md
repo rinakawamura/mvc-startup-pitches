@@ -36,6 +36,10 @@ So you built this great application that showcases some silly startup pitches!
 Let's take this application up a bit with a few stretch features. These will be
 things will not necessarily go over in class but applies the knowledge you have so far:
 
+- Try implementing everything with an additional controller like `PitchesController`.
+You need to configure the app to support that but it is just 1 additional line of code.
+All the routes you would write in the `ApplicationController` can fit into the `PitchesController`.
+
 - Create a navbar that let's us navigate to the index route and the new route from any
 page within our program. Don't just copy and paste this into ever `.erb`.
 
@@ -48,3 +52,9 @@ Explore different websites and see what part of their aesthetic you like about t
   - Here is a website for different gradients you can apply (https://www.eggradients.com/category/teal-gradient)
   - A collection of different UIs for inspiration (https://collectui.com/)
   - A collection of different CSS snippets (https://30-seconds.github.io/30-seconds-of-css/#bouncing-loader)
+
+- If you wanna get a headstart for tomorrow, try to refactor your code. Many of the
+pitches will be connected to the same industries. Instead of associating them with
+"strings" each time, how could we leverage a new model and build a relationship
+between an industry and a pitch? If you're stuck, talk it through with Prince or
+Gigi!
