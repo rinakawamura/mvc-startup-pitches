@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+    </head>
+    <body>
+        <h2><%= @pitch.title %></h2>
+        <br>
+        <p>Industry: <%= @pitch.industry %></p>
+        <p>Funding Necessary: <%= @pitch.funding %></p>
+
+        <br>
+        <p><a href="/pitches/<%=@pitch.id%>/edit">Edit Pitch</a></p>
+        <br>
+        <form method="POST" action="/pitches/<%=@pitch.id%>/delete">
+            <input type="hidden" name="_method" value="DELETE">
+            <input id="submit" type="submit" value="delete">
+        </form>
+        <br><br>
+    </body>
+</html>

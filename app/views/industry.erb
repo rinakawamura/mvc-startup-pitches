@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+    </head>
+    <body>
+        <h2>Pitches - <%=@industry%></h2>
+        <br>
+        <% @pitches.each do |pitch|%>
+            <p><a href="/pitches/<%=pitch.id%>"><%=pitch.title%></a></p>
+        <% end %>
+        <br><br>
+    </body>
+</html>

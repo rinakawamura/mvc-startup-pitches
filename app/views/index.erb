@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+    </head>
+    <body>
+        <h2>Pitches</h2>
+        <br>
+        <form method="POST" action="/search">
+            <input type="text" name="industry">
+            <input type="submit" value="search">
+        </form>
+        <br>
+        <% @pitches.each do |pitch| %>
+            <p><a href="/pitches/<%=pitch.id%>"><%=pitch.title%></a></p>
+        <% end %>
+        <br><br>
+    </body>
+</html>
